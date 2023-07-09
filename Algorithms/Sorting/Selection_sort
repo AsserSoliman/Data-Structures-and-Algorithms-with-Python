@@ -1,0 +1,10 @@
+# Selection sort
+# Complexity : O(n^2)
+# x : array
+
+for i in range(len(x)-1):
+  min_index = i
+  for j in range(i,len(x)):
+    if x[i]>x[j]:
+      min_index = j
+  x[i] , x[min_index] = x[min_index] , x[i]
